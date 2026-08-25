@@ -108,7 +108,7 @@ export async function login(email, senha) {
 //     O backend responde 400 com "Este e-mail já está cadastrado."
 //     Sua mensagem tem que aparecer em vermelho na tela.
 //
-async function cadastrar(nome, email, senha) {
+export async function cadastrar(nome, email, senha) {
     const resposta = await fetch(`${API_URL}/api/usuarios/cadastrar`, {
         method: "POST",
         headers: {
